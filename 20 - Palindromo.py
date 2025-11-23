@@ -1,0 +1,1 @@
+txt=input("Digite uma palavra: ").lower();print("É palíndromo" if txt==txt[::-1] else "Não é palíndromo")

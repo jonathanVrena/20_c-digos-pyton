@@ -1,0 +1,1 @@
+user=input("Usuário: ");senha=input("Senha: ");print("Login OK" if user=="admin" and senha=="123" else "Login falhou")

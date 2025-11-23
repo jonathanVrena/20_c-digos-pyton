@@ -1,0 +1,1 @@
+idade=int(input("Idade: "));print("Pode votar" if idade>=16 else "Não pode votar")

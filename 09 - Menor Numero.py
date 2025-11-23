@@ -1,0 +1,1 @@
+a=int(input("A: "));b=int(input("B: "));print("Menor =", min(a,b))

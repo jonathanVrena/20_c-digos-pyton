@@ -1,0 +1,1 @@
+texto=input("Digite uma palavra: ").lower();vogais="aeiou";cont=sum(1 for c in texto if c in vogais);print("Vogais:",cont)

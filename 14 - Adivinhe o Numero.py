@@ -1,0 +1,1 @@
+import random;num=random.randint(1,10);palpite=int(input("Adivinhe (1 a 10): "));print("Acertou!" if palpite==num else f"Errou. O número era {num}")
