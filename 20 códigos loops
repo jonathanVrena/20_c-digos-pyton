@@ -1,0 +1,122 @@
+# 1. For básico com range
+for i in range(5):
+    print(i)
+
+# 2. For com início, fim e passo
+for i in range(2, 11, 2):
+    print(i)
+
+# 3. While até condição
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+
+# 4. Break em for
+for i in range(10):
+    if i == 6:
+        break
+    print(i)
+
+# 5. Continue em for
+for i in range(6):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+# 6. Loop sobre lista
+frutas = ["maçã", "banana", "uva"]
+for fruta in frutas:
+    print(fruta)
+
+# 7. Loop com enumerate
+frutas = ["maçã", "banana", "uva"]
+for indice, fruta in enumerate(frutas, start=1):
+    print(indice, fruta)
+
+# 8. Loop com zip (listas em paralelo)
+nomes = ["Ana", "Bruno", "Carla"]
+idades = [25, 30, 28]
+for nome, idade in zip(nomes, idades):
+    print(f"{nome} tem {idade} anos")
+
+# 9. For em string (caracteres)
+texto = "loop"
+for ch in texto:
+    print(ch)
+
+# 10. List comprehension simples
+quadrados = [n*n for n in range(6)]
+print(quadrados)
+
+# 11. List comprehension com condição
+pares = [n for n in range(20) if n % 2 == 0]
+print(pares)
+
+# 12. Nested loops (duplo for)
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+
+# 13. While com input (simulado)
+senha_correta = "1234"
+tentativas = ["0000", "1111", "1234"]
+i = 0
+while i < len(tentativas):
+    tentativa = tentativas[i]
+    print("Tentativa:", tentativa)
+    if tentativa == senha_correta:
+        print("Acesso permitido")
+        break
+    i += 1
+else:
+    print("Acesso negado")
+
+# 14. For com dicionário (chaves e valores)
+pessoa = {"nome": "Ana", "idade": 25, "cidade": "SP"}
+for chave, valor in pessoa.items():
+    print(chave, "->", valor)
+
+# 15. Loop e soma acumulada
+numeros = [3, 5, 7, 2]
+soma = 0
+for n in numeros:
+    soma += n
+print("Soma:", soma)
+
+# 16. Loop e produto acumulado
+numeros = [2, 3, 4]
+produto = 1
+for n in numeros:
+    produto *= n
+print("Produto:", produto)
+
+# 17. For com range negativo
+for i in range(5, -1, -1):
+    print(i)
+
+# 18. While com continue
+i = 0
+while i < 7:
+    i += 1
+    if i % 3 == 0:
+        continue
+    print(i)
+
+# 19. Loop filtrando e transformando
+nomes = ["ana", "bruno", "bia", "caio"]
+resultado = []
+for nome in nomes:
+    if nome.startswith("b"):
+        resultado.append(nome.upper())
+print(resultado)
+
+# 20. For com try/except dentro do loop
+valores = ["10", "x", "30", "y"]
+nums = []
+for v in valores:
+    try:
+        nums.append(int(v))
+    except ValueError:
+        pass
+print(nums)
